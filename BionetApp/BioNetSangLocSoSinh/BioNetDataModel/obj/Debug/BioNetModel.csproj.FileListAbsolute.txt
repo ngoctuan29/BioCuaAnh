@@ -22,3 +22,9 @@ D:\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\obj\Debug\B
 D:\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.dll.config
 D:\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.dll
 D:\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.dll.config
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\bin\Debug\BioNetModel.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\obj\Debug\BioNetModel.csprojResolveAssemblyReference.cache
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\obj\Debug\BioNetModel.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDataModel\obj\Debug\BioNetModel.pdb

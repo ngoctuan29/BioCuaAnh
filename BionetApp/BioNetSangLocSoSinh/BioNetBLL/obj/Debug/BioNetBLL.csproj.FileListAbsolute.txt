@@ -43,3 +43,12 @@ D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetB
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.csprojResolveAssemblyReference.cache
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.dll
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetBLL.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetBLL.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetDAL.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetModel.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetDAL.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\bin\Debug\BioNetModel.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.csprojResolveAssemblyReference.cache
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetBLL\obj\Debug\BioNetBLL.pdb

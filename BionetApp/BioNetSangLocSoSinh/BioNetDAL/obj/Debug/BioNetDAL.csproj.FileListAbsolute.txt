@@ -33,3 +33,10 @@ D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetD
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.csprojResolveAssemblyReference.cache
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.dll
 D:\BionetApp20-07-2017\BionetApp20-07-2017\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\bin\Debug\BioNetDAL.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\bin\Debug\BioNetDAL.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\bin\Debug\BioNetModel.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\bin\Debug\BioNetModel.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.csprojResolveAssemblyReference.cache
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.dll
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetDAL\obj\Debug\BioNetDAL.pdb
