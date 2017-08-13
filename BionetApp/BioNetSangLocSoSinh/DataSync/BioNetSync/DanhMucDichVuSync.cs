@@ -13,7 +13,7 @@ namespace DataSync.BioNetSync
     {
         private static BioNetDBContextDataContext db = null;
         // private static string linkhost = "http://localhost:53112";
-        private static string linkGetDanhMucdichvu = "/api/dichvu/getall?keyword=&page=0&pagesize=20";
+        private static string linkGetDanhMucdichvu = "/api/dichvu/getall?keyword=&page=0&pagesize=999";
         public static PsReponse GetDMDichVu()
         {
             PsReponse res = new PsReponse();

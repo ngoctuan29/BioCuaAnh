@@ -2000,3 +2000,5 @@ D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh
 D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh\obj\Debug\BioNetSangLocSoSinh.exe.licenses
 D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh\obj\Debug\BioNetSangLocSoSinh.exe
 D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh\obj\Debug\BioNetSangLocSoSinh.pdb
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh\obj\Debug\BioNetSangLocSoSinh.FrmReports.FrmBaoCaoChiCuc_ChiTiet.resources
+D:\GitHub\Bionet App\BioCuaAnh\BionetApp\BioNetSangLocSoSinh\BioNetSangLocSoSinh\obj\Debug\BioNetSangLocSoSinh.FrmReports.FrmBaoCaoDonVi_ChiTiet.resources

@@ -58,8 +58,8 @@ namespace DataSync.BioNetSync
                                     tt.Diachi = item["DiaChiTTSL"];
                                     tt.DienThoai = item["SDTTTSL"];
                                     tt.ID = item["ID"];
-                                    tt.LicenseKey = item["SDTTTSL"];
-                                    var Logo = item["LicenseKey"];
+                                    tt.LicenseKey = item["LicenseKey"];
+                                    var Logo = item["Logo"];
                                     if(Logo!=null)
                                     {
                                         try

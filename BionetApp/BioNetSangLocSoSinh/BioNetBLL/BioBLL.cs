@@ -552,7 +552,7 @@ namespace BioNetBLL
                 }
 
             }
-            catch(Exception ex) { dt = null; }
+            catch { dt = null; }
             return dt;
         }
 

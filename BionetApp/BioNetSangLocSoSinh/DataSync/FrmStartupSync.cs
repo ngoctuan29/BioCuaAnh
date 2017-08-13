@@ -23,13 +23,84 @@ namespace DataSync
         }
         private void GetDuLieuBanDau()
         {
-            this.PostThongTinTrungTam();
-            this.GetThongTinTrungTam();
-            this.GetDanhMucChiCuc();
-            this.PostDanhMucChiCuc();
-            this.GetDanhMucDichVu();
-            //this.PostDanhMucDonViCoSo();
+
+            // this.PostThongTinTrungTam();
+            //  this.GetThongTinTrungTam();
+            // this.GetDanhMucChiCuc();
+            // this.PostDanhMucChiCuc();
+            this.GetDanhMucDonViCoSo();
+           // this.GetDanhMucDichVu();
+            //this.PostDanhMucDonViCoSo();m
             //this.GetDanhSachChuongTrinh();
+        }
+
+        private void GetDanhMucDanhGiaChatLuongMau()
+        {
+            this.rtbStatus.SelectionColor = Color.LightYellow;
+            this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :Đang đồng bộ dữ liệu Gói dịch vụ chung \r\n " }));
+            var res = DanhMucDanhGiaChatLuongMau.GetDMDanhGiaChatLuongMau();
+            if (res.Result)
+            {
+                this.rtbStatus.SelectionColor = Color.LightYellow;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung thành công \r\n " }));
+            }
+            else
+            {
+                this.rtbStatus.SelectionColor = Color.Red;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung KHÔNG thành công\r\n Lỗi chi tiết : \r\n" + res.StringError + "\r\n" }));
+            }
+            this.rtbStatus.ScrollToCaret();
+        }
+        private void GetDanhMucThongSoXN()
+        {
+            this.rtbStatus.SelectionColor = Color.LightYellow;
+            this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :Đang lấy dữ liệu thông số xét nghiệm \r\n " }));
+            var res = DanhMucThongSoSync.GetDMThongSo();
+            if (res.Result)
+            {
+                this.rtbStatus.SelectionColor = Color.LightYellow;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu thông số xét nghiệm thành công \r\n " }));
+            }
+            else
+            {
+                this.rtbStatus.SelectionColor = Color.Red;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu thông số xét nghiệm KHÔNG thành công\r\n Lỗi chi tiết : \r\n" + res.StringError + "\r\n" }));
+            }
+            this.rtbStatus.ScrollToCaret();
+        }
+        private void GetDanhMucGoiDichVuChung()
+        {
+            this.rtbStatus.SelectionColor = Color.LightYellow;
+            this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :Đang đồng bộ dữ liệu Gói dịch vụ chung \r\n " }));
+            var res = DanhMucGoiDichVuChungSync.GetDMGoiDichVuChung();
+            if (res.Result)
+            {
+                this.rtbStatus.SelectionColor = Color.LightYellow;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung thành công \r\n " }));
+            }
+            else
+            {
+                this.rtbStatus.SelectionColor = Color.Red;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung KHÔNG thành công\r\n Lỗi chi tiết : \r\n" + res.StringError + "\r\n" }));
+            }
+            this.rtbStatus.ScrollToCaret();
+        }
+        private void GetDanhMucGoiDichVuChung_ChiTiet()
+        {
+            this.rtbStatus.SelectionColor = Color.LightYellow;
+            this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :Đang đồng bộ dữ liệu Gói dịch vụ chung chi tiết \r\n " }));
+            var res = DanhMucGoiDichVuChungSync.GetDMGoiDichVuChung_ChiTiet();
+            if (res.Result)
+            {
+                this.rtbStatus.SelectionColor = Color.LightYellow;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung chi tiế thành công \r\n " }));
+            }
+            else
+            {
+                this.rtbStatus.SelectionColor = Color.Red;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Gói dịch vụ chung chi tiế KHÔNG thành công\r\n Lỗi chi tiết : \r\n" + res.StringError + "\r\n" }));
+            }
+            this.rtbStatus.ScrollToCaret();
         }
         private void GetDanhMucChiCuc()
         {
@@ -100,6 +171,23 @@ namespace DataSync
             //}
             //this.rtbStatus.ScrollToCaret();
         }
+        private void GetDanhMucDonViCoSo()
+        {
+            this.rtbStatus.SelectionColor = Color.LightYellow;
+            this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :Đang đồng bộ dữ liệu Đơn vị cơ sở+ \r\n " }));
+            var res = DanhMucDonViCoSoSync.GetDanhMucDonViCoSo();
+            if (res.Result)
+            {
+                this.rtbStatus.SelectionColor = Color.LightYellow;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Đơn vị cơ sở thành công \r\n " }));
+            }
+            else
+            {
+                this.rtbStatus.SelectionColor = Color.Red;
+                this.rtbStatus.AppendText(string.Concat(new object[] { DateTime.Now + " :đồng bộ dữ liệu Cơ sở KHÔNG thành công\r\n Lỗi chi tiết : \r\n" + res.StringError + "\r\n" }));
+            }
+            this.rtbStatus.ScrollToCaret();
+        }
         private void PostDanhMucChiCuc()
         {
             //this.rtbStatus.SelectionColor = Color.LightYellow;
@@ -153,15 +241,18 @@ namespace DataSync
             this.rtbStatus.ScrollToCaret();
 
         }
-
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.GetDuLieuBanDau();
         }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FrmStartupSync_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

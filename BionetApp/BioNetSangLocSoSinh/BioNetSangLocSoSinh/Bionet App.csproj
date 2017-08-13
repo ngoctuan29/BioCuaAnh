@@ -392,6 +392,18 @@
     <Compile Include="FrmReports\FrmBaoCao.Designer.cs">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReports\FrmBaoCaoChiCuc_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReports\FrmBaoCaoChiCuc_ChiTiet.Designer.cs">
+      <DependentUpon>FrmBaoCaoChiCuc_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReports\FrmBaoCaoDonVi_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReports\FrmBaoCaoDonVi_ChiTiet.Designer.cs">
+      <DependentUpon>FrmBaoCaoDonVi_ChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReports\FrmBaoCaoTuyChon_TrungTam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -703,6 +715,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReports\FrmBaoCao.resx">
       <DependentUpon>FrmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReports\FrmBaoCaoChiCuc_ChiTiet.resx">
+      <DependentUpon>FrmBaoCaoChiCuc_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReports\FrmBaoCaoDonVi_ChiTiet.resx">
+      <DependentUpon>FrmBaoCaoDonVi_ChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReports\FrmBaoCaoTuyChon_TrungTam.resx">
       <DependentUpon>FrmBaoCaoTuyChon_TrungTam.cs</DependentUpon>

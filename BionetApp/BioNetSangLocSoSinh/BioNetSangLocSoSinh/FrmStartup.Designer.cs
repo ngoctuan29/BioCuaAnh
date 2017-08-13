@@ -626,6 +626,7 @@
             this.barButtonItem25.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem25.LargeGlyph")));
             this.barButtonItem25.Name = "barButtonItem25";
             this.barButtonItem25.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            this.barButtonItem25.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem25_ItemClick);
             // 
             // barButtonItem26
             // 

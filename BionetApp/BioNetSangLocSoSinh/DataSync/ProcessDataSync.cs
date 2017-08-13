@@ -122,10 +122,6 @@ namespace DataSync
                 throw new Exception(ex.Message);
             }
         }
-        //public ProcessDataSynlllllloo;lll'/;p-09997r45690-=
-        //{
-        //    db = new BioNetDBContextDataContext(BioNetModel.Data.DataContext.connectionString);
-        //}
         public  BioNetDBContextDataContext db = null;
         public ObjectModel.ResultReponse GetRespone(string link, string token)
         {
@@ -150,8 +146,6 @@ namespace DataSync
                 return res;
             }
         }
-
-
         public  object CovertDynamicToObjectModel(dynamic item, object ct)
         {
             var props = ct.GetType().GetProperties();
@@ -171,7 +165,9 @@ namespace DataSync
                     prop.SetValue(ct, Convert.ToInt64(item[prop.Name]), null);
                 else
                if (prop.PropertyType.ToString().Contains("Int32"))
-                    prop.SetValue(ct, Convert.ToInt32(item[prop.Name]), null);
+                    try {
+                        prop.SetValue(ct, Convert.ToInt32(item[prop.Name]), null); }
+                    catch { prop.SetValue(ct, 0, null); }
                 else
                 if (prop.PropertyType.ToString().Contains("Int16"))
                     prop.SetValue(ct, Convert.ToInt16(item[prop.Name]), null);
@@ -187,7 +183,6 @@ namespace DataSync
             }
             return ct;
         }
-
         public string GetToken(string userName, string passWord)
         {
             try
@@ -220,17 +215,6 @@ namespace DataSync
                 return string.Empty;
             }
         }
-
-
-
-
-
-
-
-
-
-      
-
         public ObjectModel.ResultReponse PostRespone(string link, string token, string jsonData)
         {
             ObjectModel.ResultReponse res = new ObjectModel.ResultReponse();
@@ -269,8 +253,5 @@ namespace DataSync
             return res;
 
             }
-            
-            
-
         }
 }

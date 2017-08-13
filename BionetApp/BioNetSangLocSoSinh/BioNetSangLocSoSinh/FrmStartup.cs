@@ -556,5 +556,17 @@ Vui lòng liên hệ mua bản quyền để sử dụng phần mềm không b�
             TabCreating(xTabMain, "Nhà cung cấp", frm);
             SplashScreenManager.CloseForm();
         }
+
+        private void barButtonItem25_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            try
+            {
+                SplashScreenManager.ShowForm(this, typeof(DiaglogFrm.Waitingfrom), true, true, false);
+                FrmReports.FrmBaoCaoChiCuc_ChiTiet frm = new FrmReports.FrmBaoCaoChiCuc_ChiTiet();
+                TabCreating(xTabMain, "Báo cáo chi cục chi tiết", frm);
+                SplashScreenManager.CloseForm();
+            }
+            catch { }
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace DataSync.BioNetSync
    public  class DanhMucDanhGiaChatLuongMau
     {
         private static BioNetDBContextDataContext db = null;
-        private static string linkGetDanhMucChatLuongMau = "/api/chuongtrinh/getall?keyword=&page=0&pagesize=20";
+        private static string linkGetDanhMucChatLuongMau = "/api/danhgiachatluong/getall?keyword=&page=0&pagesize=999";
         public static PsReponse GetDMDanhGiaChatLuongMau()
         {
 

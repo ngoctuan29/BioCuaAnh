@@ -26,7 +26,7 @@ namespace DataSync.BioNetSync
     {
         private static BioNetDBContextDataContext db = null;
         // private static string linkhost = "http://localhost:53112";
-        private static string linkDanhMucGoiDichVuChung = "/api/goidichvuchung/getallGoiDichVu?keyword=&page=0&pagesize=20";
+        private static string linkDanhMucGoiDichVuChung = "/api/goidichvuchung/getallGoiDichVu?keyword=&page=0&pagesize=999";
         private static string linkGetDanhMucGoiDVChung_ChiTiet = "/api/chitietgoidichvu/getServiceByServicePackage/";
 
         public static PsReponse GetDMGoiDichVuChung()

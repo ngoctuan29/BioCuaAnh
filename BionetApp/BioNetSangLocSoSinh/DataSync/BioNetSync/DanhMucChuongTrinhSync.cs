@@ -25,7 +25,7 @@ namespace DataSync.BioNetSync
    public class DanhMucChuongTrinhSync
     {
         private static BioNetDBContextDataContext db = null;
-        private static string linkGetDanhMucChuongTrinh = "/api/chuongtrinh/getall?keyword=&page=0&pagesize=20";
+        private static string linkGetDanhMucChuongTrinh = "/api/chuongtrinh/getall?keyword=&page=0&pagesize=999";
         public static PsReponse GetDanhSachChuongTrinh()
         {
             PsReponse res = new PsReponse();

@@ -159,7 +159,7 @@
             // 
             this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(187, 215);
+            this.simpleButton2.Location = new System.Drawing.Point(183, 215);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(87, 28);
@@ -171,7 +171,7 @@
             // 
             this.btnSync.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSync.Image = ((System.Drawing.Image)(resources.GetObject("btnSync.Image")));
-            this.btnSync.Location = new System.Drawing.Point(94, 215);
+            this.btnSync.Location = new System.Drawing.Point(83, 215);
             this.btnSync.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSync.Name = "btnSync";
             this.btnSync.Size = new System.Drawing.Size(87, 28);

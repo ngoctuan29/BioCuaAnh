@@ -276,64 +276,90 @@ namespace BioNetSangLocSoSinh.FrmReports
         {
             if (this.txtChiCuc.EditValue != null && !this.txtChiCuc.EditValue.ToString().Equals("all"))
             {
+                if (XtraMessageBox.Show("Chỉ có dữ liệu của một chi cục, bạn muốn in báo cáo sơ bộ của chi cục phải không?", "BioNet - Chương trình sàng lọc sơ sinh!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                { 
+
                 try
+                    {
+                        Reports.rptBaocaoTrungTamSoBo datarp = new Reports.rptBaocaoTrungTamSoBo();
+                        List<BioNetModel.rptBaoCaoTongHop> lstResult = new List<BioNetModel.rptBaoCaoTongHop>();
+                        var data = BioNetBLL.BioNet_Bus.GetBaoCaoTongHopChiCuc(dllNgay.tungay.Value, dllNgay.denngay.Value, this.txtChiCuc.EditValue.ToString());
+                        //var chicuc = this.dataResult.ChiTietCacChiCuc.FirstOrDefault(p => p.MaChiCuc == this.txtChiCuc.EditValue.ToString());
+                        //if (chicuc != null)
+                        //{
+                        //    rptBaoCaoTongHop tonghop = new rptBaoCaoTongHop();
+                        //    PsThongTinTrungTam tt = new PsThongTinTrungTam();
+                        //    rptBaoCaoTongHop.G6PD g6pd = new rptBaoCaoTongHop.G6PD();
+                        //    rptBaoCaoTongHop.CAH cah = new rptBaoCaoTongHop.CAH();
+                        //    rptBaoCaoTongHop.CH ch = new rptBaoCaoTongHop.CH();
+                        //    rptBaoCaoTongHop.ChatLuongMau clm = new rptBaoCaoTongHop.ChatLuongMau();
+                        //    rptBaoCaoTongHop.ChuongTrinh ct = new rptBaoCaoTongHop.ChuongTrinh();
+                        //    rptBaoCaoTongHop.GAL gal = new rptBaoCaoTongHop.GAL();
+                        //    rptBaoCaoTongHop.GioiTinh gt = new rptBaoCaoTongHop.GioiTinh();
+                        //    rptBaoCaoTongHop.GoiBenh gb = new rptBaoCaoTongHop.GoiBenh();
+                        //    rptBaoCaoTongHop.PhuongPhapSinh pps = new rptBaoCaoTongHop.PhuongPhapSinh();
+                        //    rptBaoCaoTongHop.PKU pku = new rptBaoCaoTongHop.PKU();
+                        //    var tttemp = BioNet_Bus.GetThongTinTrungTam();
+                        //    tt.TenTrungTam = chicuc.TenChiCuc;
+                        //    tt.MaTrungTam = chicuc.MaChiCuc;
+                        //    if (tttemp.Logo.Length > 0)
+                        //    {
+
+                        //        try
+                        //        {
+                        //            byte[] b = tttemp.Logo.ToArray();
+                        //            MemoryStream ms = new MemoryStream(b);
+                        //            Image img = Image.FromStream(ms);
+                        //            tt.Logo = img;
+                        //        }
+                        //        catch { }
+                        //    }
+
+
+                        // }
+                        lstResult.Add(data);
+                        datarp.DataSource = lstResult;
+                        Reports.frmReportEditGeneral rept = new Reports.frmReportEditGeneral(datarp, "BaoCaoTrungTamSoBo");
+                        rept.ShowDialog();
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show("Lỗi khi lấy dữ liệu in \r\n Lỗi chi tiết : " + ex.ToString(), "BioNet - Chương trình sàng lọc sơ sinh!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    } }
+                else
                 {
-                    Reports.rptBaocaoTrungTamSoBo datarp = new Reports.rptBaocaoTrungTamSoBo();
-                    List<BioNetModel.rptBaoCaoTongHop> lstResult = new List<BioNetModel.rptBaoCaoTongHop>();
-                    var data = BioNetBLL.BioNet_Bus.GetBaoCaoTongHopChiCuc(dllNgay.tungay.Value, dllNgay.denngay.Value,this.txtChiCuc.EditValue.ToString());
-                    //var chicuc = this.dataResult.ChiTietCacChiCuc.FirstOrDefault(p => p.MaChiCuc == this.txtChiCuc.EditValue.ToString());
-                    //if (chicuc != null)
-                    //{
-                    //    rptBaoCaoTongHop tonghop = new rptBaoCaoTongHop();
-                    //    PsThongTinTrungTam tt = new PsThongTinTrungTam();
-                    //    rptBaoCaoTongHop.G6PD g6pd = new rptBaoCaoTongHop.G6PD();
-                    //    rptBaoCaoTongHop.CAH cah = new rptBaoCaoTongHop.CAH();
-                    //    rptBaoCaoTongHop.CH ch = new rptBaoCaoTongHop.CH();
-                    //    rptBaoCaoTongHop.ChatLuongMau clm = new rptBaoCaoTongHop.ChatLuongMau();
-                    //    rptBaoCaoTongHop.ChuongTrinh ct = new rptBaoCaoTongHop.ChuongTrinh();
-                    //    rptBaoCaoTongHop.GAL gal = new rptBaoCaoTongHop.GAL();
-                    //    rptBaoCaoTongHop.GioiTinh gt = new rptBaoCaoTongHop.GioiTinh();
-                    //    rptBaoCaoTongHop.GoiBenh gb = new rptBaoCaoTongHop.GoiBenh();
-                    //    rptBaoCaoTongHop.PhuongPhapSinh pps = new rptBaoCaoTongHop.PhuongPhapSinh();
-                    //    rptBaoCaoTongHop.PKU pku = new rptBaoCaoTongHop.PKU();
-                    //    var tttemp = BioNet_Bus.GetThongTinTrungTam();
-                    //    tt.TenTrungTam = chicuc.TenChiCuc;
-                    //    tt.MaTrungTam = chicuc.MaChiCuc;
-                    //    if (tttemp.Logo.Length > 0)
-                    //    {
-
-                    //        try
-                    //        {
-                    //            byte[] b = tttemp.Logo.ToArray();
-                    //            MemoryStream ms = new MemoryStream(b);
-                    //            Image img = Image.FromStream(ms);
-                    //            tt.Logo = img;
-                    //        }
-                    //        catch { }
-                    //    }
-
-
-                    // }
-                    lstResult.Add(data);
-                    datarp.DataSource = lstResult;
-                    Reports.frmReportEditGeneral rept = new Reports.frmReportEditGeneral(datarp, "BaoCaoTrungTamSoBo");
-                    rept.ShowDialog();
-
-
-                }
-                catch (Exception ex)
-                {
-                    XtraMessageBox.Show("Lỗi khi lấy dữ liệu in \r\n Lỗi chi tiết : " +ex.ToString(), "BioNet - Chương trình sàng lọc sơ sinh!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    try
+                    {
+                        Reports.rptBaoCaoChiTietTrungTam datarp = new Reports.rptBaoCaoChiTietTrungTam();
+                        List<BioNetModel.rptChiTietTrungTam> lstResult = new List<BioNetModel.rptChiTietTrungTam>();
+                        lstResult.Add(this.dataResult);
+                        datarp.DataSource = lstResult;
+                        Reports.frmReportEditGeneral rept = new Reports.frmReportEditGeneral(datarp, "BaoCaoTrungTamChiTiet");
+                        rept.ShowDialog();
+                    }
+                    catch (Exception ex)
+                    {
+                        XtraMessageBox.Show("Lỗi khi lấy dữ liệu in \r\n Lỗi chi tiết : " + ex.ToString(), "BioNet - Chương trình sàng lọc sơ sinh!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             else
             {
-                Reports.rptBaoCaoChiTietTrungTam datarp = new Reports.rptBaoCaoChiTietTrungTam();
-                List<BioNetModel.rptChiTietTrungTam> lstResult = new List<BioNetModel.rptChiTietTrungTam>();
-                lstResult.Add(this.dataResult);
-                datarp.DataSource = lstResult;
-                Reports.frmReportEditGeneral rept = new Reports.frmReportEditGeneral(datarp, "BaoCaoTrungTamChiTiet");
-                rept.ShowDialog();
+                try
+                {
+                    Reports.rptBaoCaoChiTietTrungTam datarp = new Reports.rptBaoCaoChiTietTrungTam();
+                    List<BioNetModel.rptChiTietTrungTam> lstResult = new List<BioNetModel.rptChiTietTrungTam>();
+                    lstResult.Add(this.dataResult);
+                    datarp.DataSource = lstResult;
+                    Reports.frmReportEditGeneral rept = new Reports.frmReportEditGeneral(datarp, "BaoCaoTrungTamChiTiet");
+                    rept.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    XtraMessageBox.Show("Lỗi khi lấy dữ liệu in \r\n Lỗi chi tiết : " + ex.ToString(), "BioNet - Chương trình sàng lọc sơ sinh!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
